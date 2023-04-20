@@ -1,0 +1,142 @@
+/* #4C5FD5 - Primary
+
+#dadbf1 - Secondary
+
+#000000
+
+#fff */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+nav {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+}
+
+nav>div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo {
+    width: 30%;
+
+}
+
+button {
+    border-radius: 8px;
+    padding: 6px 10px;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    border: 1px solid;
+}
+
+.bi-search {
+    transition: all .3s;
+}
+
+.bi-search:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #4C5FD5;
+    border: none;
+    transition: all .3s;
+}
+
+.btn-primary:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+section {
+    background-color: #dadbf1;
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 1rem;
+    text-align: center;
+    gap: 2rem;
+}
+
+section input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid grey;
+    width: 100%;
+
+}
+
+section div {
+    position: relative;
+    width: 100%;
+}
+
+.search-arrow {
+    position: absolute;
+    right: 20px;
+    top: 26%;
+}
+
+main {
+    padding: 4rem 1.5rem;
+}
+
+.card {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card a {
+    color: rgb(74, 74, 242) !important;
+}
+
+.card>div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card img {
+    width: 70px;
+}
+
+/* Hiding the buttons on mobile screens */
+@media (max-width: 600px) {
+    nav button {
+        display: none;
+    }
+}
+
+
+/* showing back the buttons */
+@media (min-width: 600px) {
+    nav>div:nth-child(2) svg {
+        display: none;
+    }
+}
